@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My PWA Project</title>
+</head>
+<body>
+
+    <header>
+        <h1>My PWA</h1>
+    </header>
+
+    <nav>
+        <button onclick="showPage('page1')">Token Push Message</button>
+        <button onclick="showPage('page2')">Implementasi IndexDB</button>
+        <button onclick="showPage('page3')">CV Saya</button>
+    </nav>
+
+    <main>
+       <!-- ... (bagian HTML lainnya) ... -->
+
+<div id="page1">
+    <h2>Token Push Message</h2>
+    <button onclick="requestPushPermission()">Izinkan Push Notification</button>
+</div>
+
+<!-- ... (bagian HTML lainnya) ... -->
+
+
+        <div id="page2">
+            <h2>Implementasi IndexDB</h2>
+            <form id="formData">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+
+                <label for="nim">NIM:</label>
+                <input type="text" id="nim" name="nim" required>
+
+                <label for="kelas">Kelas:</label>
+                <input type="text" id="kelas" name="kelas" required>
+
+                <label for="motto">Motto:</label>
+                <input type="text" id="motto" name="motto" required>
+
+                <label for="tujuan">Tujuan memilih PWA:</label>
+                <textarea id="tujuan" name="tujuan" required></textarea>
+
+                <button type="button" onclick="saveFormData()">Simpan</button>
+            </form>
+
+            <h3>Data di IndexDB:</h3>
+            <ul id="dataList"></ul>
+        </div>
+
+       <!-- ... (bagian HTML lainnya) ... -->
+<!-- ... (bagian HTML lainnya) ... -->
+
+<div id="page3">
+    <h2>CV Saya</h2>
+    <div id="cvContainer">
+        <div id="personalInfo">
+            <img src="poto aing.jpeg" alt="poto aing.jpeg" id="profilePhoto">
+            <div id="personalDetails">
+                <h3>Informasi Pribadi</h3>
+                <p><strong>Nama:</strong> MUCHAMAD NAUVAL AZMI</p>
+                <p><strong>Tanggal Lahir:</strong> 1 NOVEMBER 2001</p>
+                <p><strong>Alamat:</strong>DS.PENUSUPAN KEC.RANDUDONGKAL KAB.PEMALANG</p>
+            </div>
+        </div>
+
+        <h3>Pendidikan</h3>
+        <p><strong>TKJ</strong> - SMK ISLAM RANDUDONGKAL</p>
+
+        <h3>Pengalaman Kerja</h3>
+        <p><strong>KERJA BAKTI</strong> </p>
+
+        <h3>Keterampilan</h3>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Node.js, Express.js</li>
+            <li>MEMANCING </li>
+        </ul>
+    </div>
+</div>
+
+<!-- ... (bagian HTML lainnya) ... -->
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

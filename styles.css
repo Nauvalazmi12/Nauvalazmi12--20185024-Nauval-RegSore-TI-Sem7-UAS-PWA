@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #444;
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+#page1, #page2, #page3 {
+    display: none;
+}
+
+#page1.visible, #page2.visible, #page3.visible {
+    display: block;
+}
+
+#page2 form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+#page2 form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#page2 form input,
+#page2 form textarea,
+#page2 form button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#page2 form button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+#page2 form button:hover {
+    background-color: #555;
+}
+
+#dataList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#dataList li {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+/* ... (CSS yang sudah ada sebelumnya) ... */
+
+#page3 #cvContainer {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#page3 #personalInfo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#page3 #profilePhoto {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+#page3 #personalDetails {
+    flex-grow: 1;
+}
+
+#page3 h3 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+#page3 p {
+    margin-bottom: 10px;
+}
+
+#page3 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#page3 ul li {
+    margin-bottom: 5px;
+}
+
+/* ... (CSS yang sudah Anda miliki) ... */
